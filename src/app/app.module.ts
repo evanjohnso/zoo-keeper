@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { ZooManagerComponent } from './zoo-manager/zoo-manager.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ZooManagerComponent
   ],
   imports: [
     BrowserModule,
