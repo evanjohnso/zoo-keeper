@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ZooManagerComponent } from './zoo-manager/zoo-manager.component';
+import { AnimalListComponent } from './zoo-manager/animal-list/animal-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ZooManagerComponent
+    ZooManagerComponent,
+    AnimalListComponent
   ],
   imports: [
     BrowserModule,

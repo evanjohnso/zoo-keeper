@@ -1,5 +1,5 @@
 {{month}}/{{day}}//{{year}}
-<ul *ngFor="let animal of totalAnimalInventory">
-  <li>{{animal.name}}</li>
-  <button class="btn btn-primary">Booties</button>
-</ul>
+<app-animal-list
+    [childAnimalInventory]="totalAnimalInventory"
+    (sendTargetAnimalToParent)="animalSelected($event)"
+></app-animal-list>
