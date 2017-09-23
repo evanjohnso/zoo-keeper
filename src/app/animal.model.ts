@@ -1,6 +1,4 @@
 export class Animal {
-  public wtf: string = 'wtf';
-
   constructor(public species: string,
               public name: string,
               public birthday: Date,

@@ -1,0 +1,15 @@
+.flexParent {
+  display: flex; /* or inline-flex */
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.flexChild {
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 300px;;
+  height: 300px;
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];
+  text-align: center;
+  border-radius: 5%;
+}

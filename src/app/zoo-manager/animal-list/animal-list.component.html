@@ -1,5 +1,12 @@
-<ul *ngFor="let animal of childAnimalInventory">
-  <li>{{animal.name}}</li>
-    <button (click)="userClickedThisAnimal(animal)"
-             class="btn btn-primary">Booties</button>
-</ul>
+<div class="flexParent">
+  <div class="flexChild" *ngFor="let animal of childAnimalInventory">
+    <h2>{{animal.name}}</h2>
+      <button (click)="userClickedThisAnimal(animal)"
+               class="btn btn-primary">Details</button>
+  </div>
+    <ul *ngIf="selectedAnimal">
+      <li *ngFor="let like of selectedAnimal.likes">
+        {{like}}
+      </li>
+    </ul>
+</div>
