@@ -1,4 +1,13 @@
-<app-animal-list
-    [childAnimalInventory]="totalAnimalInventory"
-    (sendTargetAnimalToParent)="animalSelected($event)"
-></app-animal-list>
+<div class="container">
+  <app-new-animal (sendNewAnimalToZooManager)="addNewAnimal($event)"></app-new-animal>
+  <app-edit
+      [editThisAnimal]="focusAnimal"
+      (doneEditingThisAnimal)="doneEditing()"
+  ></app-edit>
+  <app-animal-list
+      [childAnimalInventory]="totalAnimalInventory"
+      (sendTargetAnimalToParent)="animalSelected($event)"
+  ></app-animal-list>
+
+
+</div>

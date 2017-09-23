@@ -1,0 +1,54 @@
+<h1>New Animal</h1>
+ <div>
+   <label>Enter the Animal Name:</label>
+   <input #newName>
+ </div>
+ <div>
+   <label>Enter the species:</label>
+   <input #newSpecies>
+ </div>
+ <div>
+   <label>Enter the their birthday:</label>
+   <input #newBirthday type="date">
+ </div>
+ <div>
+  <label>What is their diet:</label>
+  <select #newDiet>
+    <option [value]="vegetarian"> Vegetarian </option>
+    <option [value]="omnivore"> Omnivore </option>
+    <option [value]="carnivorous"> Carnivorous </option>
+  </select>
+
+  <button
+      (click)="submitForm(
+                newName.value,
+                newSpecies.value,
+                newBirthday.value,
+                newDiet.value,
+                newLocation.value,
+                newCaretakers.value,
+                newSex.value,
+                newLikes.value,
+                newDislikes.value
+                );">Add</button>
+  </div>
+  <div>
+    <label>Enter their location:</label>
+    <input #newLocation >
+  </div>
+  <div>
+    <label>Enter the number of caretakers:</label>
+    <input #newCaretakers type="number">
+  </div>
+  <div>
+    <label>Enter the gender:</label>
+    <input #newSex>
+  </div>
+  <div>
+    <label>Enter their likes separated by commas:</label>
+    <input #newLikes >
+  </div>
+  <div>
+    <label>Enter their dislikes separated by commas:</label>
+    <input #newDislikes >
+  </div>

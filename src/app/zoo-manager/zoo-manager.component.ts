@@ -20,8 +20,13 @@ export class ZooManagerComponent {
 
   animalSelected(selectedAnimal: Animal) {
     this.focusAnimal = selectedAnimal;
-    alert(this.focusAnimal.name);
+    console.log(this.focusAnimal.name);
   }
-
-
+  doneEditing() {
+    console.log('done editing button was clicked, in the parent now ');
+    this.focusAnimal = null;
+  }
+  addNewAnimal(animalToAdd) {
+    this.totalAnimalInventory.push(animalToAdd);
+  }
 }

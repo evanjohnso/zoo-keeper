@@ -1,0 +1,12 @@
+<div *ngIf="editThisAnimal">
+  <p>{{editThisAnimal.name}}</p>
+  <p>{{editThisAnimal.species}}</p>
+  <p>Number of caretakers: {{editThisAnimal.caretakers}}</p>
+  <label>Change the animals name:</label>
+  <input [(ngModel)]="editThisAnimal.name" type="text"><br>
+  <label>Enter Number of caretakers:</label>
+  <input [(ngModel)]="editThisAnimal.caretakers" type="number" [required]="true"><br>
+  <button class="btn btn-warning"
+          (click)="doneButtonWasClicked()"
+          >Done</button>
+</div>

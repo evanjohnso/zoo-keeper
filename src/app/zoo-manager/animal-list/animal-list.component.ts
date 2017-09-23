@@ -9,11 +9,12 @@ import { Animal } from './../../animal.model';
 export class AnimalListComponent {
   @Input() childAnimalInventory: Animal[];
   @Output() sendTargetAnimalToParent = new EventEmitter();
-  homies: boolean = true;
+
   selectedAnimal: Animal = null;
 
+
   userClickedThisAnimal(thisAnimal) {
-    this.selectedAnimal = thisAnimal;
+    // this.selectedAnimal = thisAnimal;
     this.sendTargetAnimalToParent.emit(thisAnimal);
   }
 
