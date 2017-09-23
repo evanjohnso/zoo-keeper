@@ -1,4 +1,6 @@
 export class Animal {
+  public wtf: string = 'wtf';
+
   constructor(public species: string,
               public name: string,
               public birthday: Date,
@@ -6,7 +8,7 @@ export class Animal {
               public housingUnit: string,
               public caretakers: number,
               public sex: string,
-              public likes: string,
-              public dislikes: string
-            ){}
+              public likes: string[],
+              public dislikes: string[]
+            ) {}
 }

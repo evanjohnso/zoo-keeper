@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ZooManagerComponent } from './zoo-manager/zoo-manager.component';
 import { AnimalListComponent } from './zoo-manager/animal-list/animal-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ZooManagerComponent,
-    AnimalListComponent
+    AnimalListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
