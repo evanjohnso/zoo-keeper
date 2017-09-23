@@ -1,3 +1,4 @@
+<div>
 <h1>New Animal</h1>
  <div>
    <label>Enter the Animal Name:</label>
@@ -13,24 +14,11 @@
  </div>
  <div>
   <label>What is their diet:</label>
-  <select #newDiet>
+    <select #newDiet>
     <option [value]="vegetarian"> Vegetarian </option>
     <option [value]="omnivore"> Omnivore </option>
     <option [value]="carnivorous"> Carnivorous </option>
   </select>
-
-  <button
-      (click)="submitForm(
-                newName.value,
-                newSpecies.value,
-                newBirthday.value,
-                newDiet.value,
-                newLocation.value,
-                newCaretakers.value,
-                newSex.value,
-                newLikes.value,
-                newDislikes.value
-                );">Add</button>
   </div>
   <div>
     <label>Enter their location:</label>
@@ -52,3 +40,16 @@
     <label>Enter their dislikes separated by commas:</label>
     <input #newDislikes >
   </div>
+  <button
+      (click)="submitForm(
+                newName.value,
+                newSpecies.value,
+                newBirthday.value,
+                newDiet.value,
+                newLocation.value,
+                newCaretakers.value,
+                newSex.value,
+                newLikes.value,
+                newDislikes.value
+                );" class="btn btn-warning">Add</button>
+</div>
