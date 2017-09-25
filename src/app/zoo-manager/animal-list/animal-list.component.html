@@ -1,14 +1,19 @@
 <div class="flexParent">
-  <div class="flexChild" *ngFor="let animal of childAnimalInventory">
+  <div class="container row">
+    <h2>Here at zTAS we often have exotic animals. Choose whether you'd like to see young or mature year old animals!</h2>
+    <select (change)="engageFilterAgePipe($event.target.value)">
+        <option value="youngAnimals">Young Animals</option>
+        <option value="matureAnimals">The mature crowd</option>
+        <option value="allAnimals" selected="selected">All animals</option>
+      </select>
+  </div>
+
+  <div class="flexChild"
+       *ngFor="let animal of childAnimalInventory | filterAgePipeName:filterAgePassedToPipeHere">
     <h2>{{animal.name}}</h2>
+    <h4>{{animal.age}} years old</h4>
     <button (click)="userClickedThisAnimal(animal)"
              class="btn btn-primary">Details</button>
 
   </div>
 </div>
-
-    <!-- <ul *ngIf="selectedAnimal">
-      <li *ngFor="let like of selectedAnimal.likes">
-        {{like}}
-      </li>
-    </ul> -->

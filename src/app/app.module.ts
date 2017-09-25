@@ -9,6 +9,7 @@ import { AnimalListComponent } from './zoo-manager/animal-list/animal-list.compo
 import { HeaderComponent } from './header/header.component';
 import { EditComponent } from './zoo-manager/edit/edit.component';
 import { NewAnimalComponent } from './zoo-manager/new-animal/new-animal.component';
+import { filterAgePipe } from './ageFilter.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NewAnimalComponent } from './zoo-manager/new-animal/new-animal.componen
     AnimalListComponent,
     HeaderComponent,
     EditComponent,
-    NewAnimalComponent
+    NewAnimalComponent,
+    filterAgePipe
   ],
   imports: [
     BrowserModule,

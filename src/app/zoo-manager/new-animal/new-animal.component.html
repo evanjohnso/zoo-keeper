@@ -1,4 +1,4 @@
-<div>
+<div *ngIf="addNewAnimal">
 <h1>New Animal</h1>
  <div>
    <label>Enter the Animal Name:</label>
@@ -9,8 +9,8 @@
    <input #newSpecies>
  </div>
  <div>
-   <label>Enter the their birthday:</label>
-   <input #newBirthday type="date">
+   <label>Enter the their age:</label>
+   <input #newAge>
  </div>
  <div>
   <label>What is their diet:</label>
@@ -44,7 +44,7 @@
       (click)="submitForm(
                 newName.value,
                 newSpecies.value,
-                newBirthday.value,
+                newAge.value,
                 newDiet.value,
                 newLocation.value,
                 newCaretakers.value,
