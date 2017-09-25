@@ -1,14 +1,43 @@
-# AnimalTracker
+# Zoo Tracker App
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+#### By Evan Johnson
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Description
 
-## Code scaffolding
+_Keep track of all the animals in your zoo!_
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
-## Deploying to GitHub Pages
+## Setup/Installation Requirements
 
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
+* Chrome
+* Node
+
+```console
+  npm install
+```
+
+```console
+  ng serve
+```
+
+* Navigate to localhost:4200
+
+
+
+## Development Specifications
+| Behavior      | Example Input         | Example Output        |
+| ------------- | ------------- | ------------- |
+| Add new animal | details  |  Animal appended to list  |
+| Update animal info | New details | Live update |
+
+
+## Technologies Used
+
+* _JavaScript_
+* _Node_
+* _Angular 2_
+
+
+### License
+
+MIT Copyright &copy; 2017 Evan Johnson
