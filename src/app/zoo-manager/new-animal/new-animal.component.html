@@ -1,4 +1,4 @@
-<div *ngIf="addNewAnimal">
+<div *ngIf="addNewAnimal" class="newAnimal">
 <h1>New Animal</h1>
  <div>
    <label>Enter the Animal Name:</label>
@@ -10,7 +10,7 @@
  </div>
  <div>
    <label>Enter the their age:</label>
-   <input #newAge>
+   <input #newAge [required]="true">
  </div>
  <div>
   <label>What is their diet:</label>

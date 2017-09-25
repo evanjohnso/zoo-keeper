@@ -1,0 +1,9 @@
+.panel {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
