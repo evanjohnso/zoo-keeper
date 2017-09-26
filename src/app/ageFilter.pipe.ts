@@ -9,7 +9,6 @@ import { Animal } from './animal.model';
 export class filterAgePipe implements PipeTransform {
 
   transform(input: Animal[], ageFilter){
-    console.log(ageFilter);
     if (ageFilter==="youngAnimals") {
       return input.filter( (animal) => {
         return animal.age < 30;

@@ -1,9 +1,8 @@
 <div class="container">
-  <div class="newAniaml">
+  <div *ngIf="!managerAnimalBoolean" id="newAniaml">
     <h2>New animal in the zoo?</h2>
     <button (click)="changeNewAnimalBoolean()"
-            class="btn btn-primary">Add</button>
-
+            class="btn btn-primary" id="addButton">Add</button>
   </div>
   <app-new-animal
       [addNewAnimal]="managerAnimalBoolean"
